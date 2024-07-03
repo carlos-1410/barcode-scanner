@@ -5,11 +5,11 @@ require_relative "scanner"
 class BarcodeScanner
   class << self
     def scan(code)
-      ::Scanner.new(buffer).call(code)
+      Scanner.new(buffer).call(code)
     end
     
     def exit
-      ::Printer.new(buffer).call
+      Printer.new(buffer).call
     end
 
     def buffer

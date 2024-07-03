@@ -1,11 +1,5 @@
 class LCDDisplay
-  def initialize(input)
-    @input = input
-  end
-
-  attr_reader :input
-
-  def call
+  def self.call(input)
     input
   end
 end

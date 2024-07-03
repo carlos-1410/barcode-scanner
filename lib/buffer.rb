@@ -7,7 +7,7 @@ class Buffer
     @items.push(data)
   end
 
-  def all_items
+  def items
     @items
   end
 end

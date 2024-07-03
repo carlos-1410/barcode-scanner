@@ -18,11 +18,13 @@ class Scanner
   attr_reader :buffer
 
   def find_product(code)
-    ::ProductInventory.new.find_product(code)
+    ProductInventory.new.find_product(code)
   end
 
   def show_product(product)
-    ::LCDDisplay.new(product).call
+    input = product.is_a?(Object) ? product.to_s : product
+
+    LCDDisplay.call(input)
   end
 
   def add_product(product)

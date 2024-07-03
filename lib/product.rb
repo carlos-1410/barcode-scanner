@@ -8,7 +8,7 @@ class Product
     )
   end
 
-  attr_reader :product, :name, :price
+  attr_reader :product
 
   def to_s
     "NAME: #{product.name} | PRICE: #{product.price}"

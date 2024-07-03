@@ -1,4 +1,5 @@
 require "csv"
+require "product"
 
 class ProductInventory
   def initialize

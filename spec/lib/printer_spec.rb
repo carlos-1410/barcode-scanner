@@ -11,7 +11,7 @@ RSpec.describe Printer do
         add_product(product, buffer: buffer)
       end
     printer = Printer.new(buffer)
-    expected_sum = buffer.all_items.sum { _1.price }
+    expected_sum = buffer.items.sum { _1.price }
     expect(printer).to receive(:call).with(no_args).and_return(expected_output)
 
     output = printer.call

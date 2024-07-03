@@ -13,7 +13,7 @@ RSpec.describe ProductInventory do
   end
 
   it "should find product when the code is valid" do
-    product = [{:code=>"198RWW2K0VZ974863", :name=>"driller", :price=>"11.99"}]
+    product = [{ code: "198RWW2K0VZ974863", name: "driller", price: "11.99"}]
     code = "198RWW2K0VZ974863"
     product_inventory = ProductInventory.new
 
